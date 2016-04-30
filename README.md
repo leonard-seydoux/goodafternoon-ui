@@ -10,5 +10,7 @@ The syntax colorscheme is [Seti Syntax](https://github.com/jesseweed/seti-syntax
 ![screenshot-code](https://github.com/leonard-seydoux/atom-nickel-ui/blob/master/code.tiff)
 
 ### Installation
-Simply open Atom, go to the Settings panel, and navigate to the +Install 
+Simply open Atom, go to the Settings panel, and navigate to the +Install tab. Then search for a theme named `goodafternoon`, and click install !
 ![screenshot-code](https://github.com/leonard-seydoux/atom-nickel-ui/blob/master/settings.tiff)
+
+### Enjoy ! 
