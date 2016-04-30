@@ -7,10 +7,10 @@ A highly minimal, flat and dark gray UI theme for Atom -- to be used with a coff
 ### Sample code view
 The syntax colorscheme is [Seti Syntax](https://github.com/jesseweed/seti-syntax.git), and the font of the interface is [Iosevka](https://github.com/be5invis/Iosevka.git). The code itself uses [Source Code Pro](https://github.com/adobe-fonts/source-code-pro.git).
 
-![screenshot-code](code.png)
+![screenshot-code](https://github.com/leonard-seydoux/goodafternoon-ui/blob/master/code.png?raw=true)
 
 ### Installation
 Simply open Atom, go to the Settings panel, and navigate to the +Install tab. Then search for a theme named `goodafternoon`, and click install !
-![screenshot-code](settings.png)
+![screenshot-code](https://github.com/leonard-seydoux/goodafternoon-ui/blob/master/settings.png?raw=true)
 
 ### Enjoy !
