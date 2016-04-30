@@ -1,4 +1,4 @@
-# Nickel theme
+# Good afternoon theme
 
 Highly minimal flat dark gray UI theme for Atom. Derived from [black-ui](https://github.com/williamtguerra/black-ui).
 
