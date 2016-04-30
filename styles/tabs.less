@@ -1,0 +1,96 @@
+@import "ui-variables";
+@modified-icon-width: 8px;
+@tab-skew: 0deg;
+@tab-top-padding: 0px;
+@tab-bottom-border-height: 1px;
+@tab-border: 0px solid @tab-border-color;
+
+.tab-bar
+{
+    height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
+    border: none;
+    border-bottom: 1px solid @tab-border-color;
+    background-color: @tab-bar-background-color;
+
+    .tab
+    {
+        position: relative;
+        top: @tab-top-padding;
+        height: @tab-height;
+        line-height: @tab-height;
+        color: @text-color;
+        padding-left: 5px;
+        transition: color .1s ease-in;
+        font-weight: bold;
+        font-style: italic;
+        border-right: @tab-border;
+
+        .close-icon
+        {
+          top: 0;
+          right: 3px;
+          z-index: 3;
+          line-height: @tab-height;
+          color: inherit;;
+          &:hover{color: @text-color-error;}
+        }
+
+        &:nth-child(1)
+        {
+          div.title {padding-left: 3px;}
+        }
+
+        .icon {
+          &:before {
+            font-size: 1.1em;
+            color: inherit;
+          }
+        }
+
+        &.modified:not(:hover) .close-icon {
+          top: @tab-height/2 - @modified-icon-width/2 ;
+          right: 7px;
+          width: @modified-icon-width;
+          height: @modified-icon-width;
+        }
+
+        &.modified:hover .close-icon:hover {
+          color: @text-color-highlight;
+        }
+
+    }
+
+    .tab.active {
+        z-index: 1;
+        line-height: @tab-height - 2px;
+        color: @text-color-selected;
+
+        .title{
+            position: relative;
+            top: 1px;
+        }
+
+        .close-icon {
+            line-height: @tab-height - 1px;
+            color: inherit;
+            &:hover {color: @text-color-error;}
+        }
+
+        &, &:before {
+        background: @tab-background-color-active;
+        height: @tab-height;
+        box-shadow: none;
+        }
+    }
+
+  .tab:hover {
+    color: @text-color-warning;
+  }
+
+  .placeholder {
+    height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
+    &:after {
+      top: @tab-height + @tab-top-padding + @tab-bottom-border-height;
+    }
+  }
+}
